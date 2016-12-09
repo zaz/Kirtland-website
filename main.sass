@@ -36,32 +36,38 @@ header
 
 #services
 	padding: 0
-	max-width: 100%
-	overflow: hidden
 	text-align: center
 	h3
 		display: block
 		font-weight: 700
+		margin-bottom: 0
 	li
 		display: inline-block
-		vertical-align: top
+		position: relative
 		list-style: none
-		height: 7em
-		width: 18em
-		padding: 1.5em 1em
-		background-color: #fff
-		p
+		height: 10em
+		width: 33%
+		min-width: 280px
+		.face, .back
 			position: absolute
-			width: 18em
-			background-color: #fff
-			transition: all .5s
-			margin: -7em 0 0 0
-			opacity: 0
+			top: 50%
+			transition: all .25s
+			backface-visibility: hidden
+		.face
+			left: 0
+			right: 0
+			transform: translateY(-50%)
+		.back
+			transform: translateY(-50%) rotateX(180deg)
+			width: 90%
+			padding: 0 5%
 		&:hover
-			z-index: 10
-			p
-				opacity: 1
-				margin: 0
+			.face, .back
+				transition: all .5s
+			.face
+				transform: translateY(-50%) rotateX(180deg)
+			.back
+				transform: translateY(-50%) rotateX(0deg)
 		img
 			height: 4em
 			width: 4em
