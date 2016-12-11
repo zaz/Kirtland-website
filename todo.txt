@@ -1,6 +1,5 @@
 format quote better
 speed up links with pre-caching or pre-fetching
-+ contact details
 obfuscate contact details with JS
 * background
 hone for multiple screen sizes
