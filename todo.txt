@@ -1,4 +1,3 @@
-+ 404 page
 format quote better
 speed up links with pre-caching or pre-fetching
 obfuscate contact details with JS
@@ -13,3 +12,4 @@ x find icons for services
 x put services in boxes
 x + favicon
 x + background
+x + 404 page
