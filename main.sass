@@ -6,6 +6,18 @@ body
 	font-family: 'Open Sans', sans-serif
 	color: #333
 
+input[type=submit]
+	background: #ecce73
+	height: 3em
+	width: 8em
+	border-radius: 2px
+	border: 1px solid #eeeecd
+	transition: all .3s
+	cursor: pointer
+input[type=submit]:hover
+	background: darken(#ecce73, 15%)
+
+
 .right
 	text-align: right
 .circle
@@ -177,3 +189,22 @@ main
 #about
 	background: #f8f8eb url(/r/bg_beige_dot.png)
 	border: 1px solid #eeeecd
+
+#contact
+	background: #f8f8eb url(/r/bg_beige_grid.png)
+	border: 1px solid #eeeecd
+	form
+		padding: 3em 0 5em 0
+		display: flex
+		height: 16em
+		width: 100%
+		textarea, input
+			margin: 1em
+			padding: .5em
+		textarea
+			flex: 2
+		div
+			flex: 1
+			display: block
+			input
+				display: block
