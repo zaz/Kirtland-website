@@ -1,3 +1,4 @@
++ 404 page
 format quote better
 speed up links with pre-caching or pre-fetching
 obfuscate contact details with JS
