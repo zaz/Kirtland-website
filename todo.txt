@@ -1,4 +1,3 @@
-+ favicon
 format quote better
 speed up links with pre-caching or pre-fetching
 + contact details
@@ -13,3 +12,4 @@ x + images
 x style header
 x find icons for services
 x put services in boxes
+x + favicon
