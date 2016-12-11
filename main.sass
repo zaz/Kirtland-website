@@ -12,8 +12,10 @@ body
 	border-radius: 50%
 blockquote
 	overflow: hidden
-	footer
+	cite
 		float: right
+		&:before
+			content: "\2014  "
 .hide-detail .detail
 	display: none
 
