@@ -1,7 +1,6 @@
 function adjust_header(header) {
-			scroll = document.body.scrollTop
+			let scroll = $(window).scrollTop()
 			if (100 > scroll) {
-				console.log(scroll)
 				header.height(128 - scroll)
 				header.css("padding", "16px")
 			} else if (124 > scroll) {
