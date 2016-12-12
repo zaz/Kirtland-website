@@ -202,8 +202,9 @@ main
 #contact
 	background: #f8f8eb url(/r/bg_beige_grid.png)
 	border: 1px solid #eeeecd
+	padding-bottom: 2rem
 	form
-		padding: 3rem 0 5rem 0
+		padding: 3rem 0 0
 		display: flex
 		height: 16rem
 		width: 100%
@@ -217,3 +218,16 @@ main
 			display: block
 			input
 				display: block
+
+#credit
+	text-align: center
+	color: #777
+	padding: 1em 0 0
+	a
+		color: inherit
+		transition: all .3s
+		// expand clickable area of link
+		padding: 2rem 3rem 2rem 12rem
+		margin: -2rem -3rem -2rem -12rem
+	a:hover
+		color: darken(#ecce73, 15%)
