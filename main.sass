@@ -1,6 +1,10 @@
 ---
 ---
 
+$primary: #ecce73
+$secondary: #eeeecd
+$background: #f8f8f8
+
 body
 	margin: 0
 	font-family: 'Lusitana', serif
@@ -8,15 +12,15 @@ body
 	color: #333
 
 input[type=submit]
-	background: #ecce73
+	background: $primary
 	height: 3rem
 	width: 8rem
 	border-radius: 2px
-	border: 1px solid #eeeecd
+	border: 1px solid $secondary
 	transition: all .3s
 	cursor: pointer
 input[type=submit]:hover
-	background: darken(#ecce73, 15%)
+	background: darken($primary, 15%)
 
 
 .right
@@ -41,7 +45,7 @@ h2
 	position: relative
 	z-index: 0
 	max-width: none
-	background: #eeeecd
+	background: $secondary
 	margin: 0
 	line-height: 3rem
 	text-align: center
@@ -137,16 +141,16 @@ main
 
 #blurb
 	text-align: center
-	background: #ecce73
+	background: $primary
 	padding: 1rem
 
 #quote
-	background: #ecce73
+	background: $primary
 	padding: 1rem
 
 #services, #error
-	background: #f8f8eb url(/r/bg_beige_hatch.png)
-	border: 1px solid #eeeecd
+	background: $background url(/r/bg_beige_hatch.png)
+	border: 1px solid $secondary
 
 #services > ul, #error > p
 	padding: 1.5rem 0
@@ -196,12 +200,12 @@ main
 	padding-top: 4rem
 
 #about
-	background: #f8f8eb url(/r/bg_beige_dot.png)
-	border: 1px solid #eeeecd
+	background: $background url(/r/bg_beige_dot.png)
+	border: 1px solid $secondary
 
 #contact
-	background: #f8f8eb url(/r/bg_beige_grid.png)
-	border: 1px solid #eeeecd
+	background: $background url(/r/bg_beige_grid.png)
+	border: 1px solid $secondary
 	padding-bottom: 2rem
 	form
 		padding: 3rem 0 0
