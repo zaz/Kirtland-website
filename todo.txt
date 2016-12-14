@@ -1,12 +1,14 @@
 in-page links: scroll to correct position
 in-page links: scroll smoothly
 + endpoint for contact form
++ captcha for contact form
 fade "SEND" until required fields are complete
 format quote better
 speed up links with pre-caching or pre-fetching
 obfuscate contact details with JS
 hone for multiple screen sizes
 check in different browsers
++ Google Analytics
 
 x + HTML content
 x + images
