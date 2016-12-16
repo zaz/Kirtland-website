@@ -32,7 +32,7 @@ function in_page_links_smooth_scroll() {
 $( () => {
 	let header = $("header")
 
-	$(window).scroll( e => adjust_header(header) )
-	adjust_header(header)
+	//$(window).scroll( e => adjust_header(header) )
+	//adjust_header(header)
 	in_page_links_smooth_scroll()
 })
