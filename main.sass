@@ -223,6 +223,14 @@ main
 			input
 				display: block
 
+#about, #contact
+	// adjust for fixed header & section blurb
+	padding-top: 9rem
+	margin-top: -9rem
+	// prevent our padding hack from interfering with above element
+	position: relative
+	z-index: -9
+
 #credit
 	text-align: center
 	color: #777
