@@ -16,11 +16,12 @@ input[type=submit]
 	height: 3rem
 	width: 8rem
 	border-radius: 2px
-	border: 1px solid $secondary
+	border: 1px solid darken($primary, 15%)
 	transition: all .3s
 	cursor: pointer
 input[type=submit]:hover
-	background: darken($primary, 15%)
+	background: lighten($primary, 15%)
+	border: 1px solid $primary
 
 
 .right
