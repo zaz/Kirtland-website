@@ -10,6 +10,7 @@ body
 	font-family: 'Lusitana', serif
 	font-size: 1.1rem
 	color: #333
+	overflow-x: hidden
 
 input[type=submit]
 	background: $primary
@@ -222,3 +223,56 @@ main
 		margin: -2rem -3rem -2rem -12rem
 	a:hover
 		color: darken(#ecce73, 15%)
+
+@media screen and (max-width: 1274px)
+
+@media screen and (max-width: 865px)
+	header .detail
+		display: none
+
+@media screen and (max-width: 722px)
+	main
+		padding-top: 13.5rem
+	header
+		position: absolute
+	header a:nth-child(1)
+		margin-bottom: -2rem
+		h1
+			padding-bottom: 3rem
+	header a:nth-child(2)
+		margin-top: -2rem
+		> span
+			padding-top: 3rem
+	#contact form
+		padding-bottom: 6rem
+		display: block
+		textarea
+			width: 80%
+			height: 8rem
+			margin-bottom: 0
+
+@media screen and (max-width: 414px)
+	main
+		padding-top: 24rem
+	header
+		padding-bottom: 5.6rem
+		text-align: center
+		img, h1, span
+			display: block
+			margin: 0
+		img
+			margin: 0 auto
+	header > div > a:last-child
+		float: none
+
+@media screen and (max-width: 800px)
+	address .a
+		display: none
+
+@media screen and (max-width: 500px)
+	address .e .detail
+		display: none
+
+@media screen and (max-width: 340px)
+	address .e
+		display: none
