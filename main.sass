@@ -209,8 +209,13 @@ main
 	margin-top: -17rem
 	// prevent our padding hack from interfering with above element
 	position: relative
-	z-index: -8
+	z-index: -7
 #contact
+	z-index: -8
+// prevent our hack for the padding hack from preventing interaction with
+// about and contact sections
+body, main
+	position: relative
 	z-index: -9
 
 #credit
