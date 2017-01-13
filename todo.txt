@@ -1,5 +1,4 @@
 + nav bar
-+ contact form fields: company, tel
 + spam control for contact form
 * colors
 shrink Caroline's name & title
@@ -21,3 +20,4 @@ x + credit link
 x + endpoint for contact form
 x in-page links: scroll to correct position
 x in-page links: scroll smoothly
+x + contact form fields: company, tel
