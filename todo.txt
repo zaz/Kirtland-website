@@ -1,4 +1,3 @@
-- header shrink on scroll
 + nav bar
 + contact form fields: company, tel
 + spam control for contact form
