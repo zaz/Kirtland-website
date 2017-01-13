@@ -1,7 +1,10 @@
-+ captcha for contact form
+- header shrink on scroll
++ nav bar
++ contact form fields: company, tel
++ spam control for contact form
+* colors
+shrink Caroline's name & title
 fade "SEND" until required fields are complete
-format quote better
-speed up links with pre-caching or pre-fetching
 obfuscate contact details with JS
 hone for multiple screen sizes
 check in different browsers
