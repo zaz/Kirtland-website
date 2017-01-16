@@ -15,7 +15,6 @@ body
 input[type=submit]
 	background: $primary
 	height: 3rem
-	width: 8rem
 	border-radius: 2px
 	border: 1px solid darken($primary, 15%)
 	transition: all .3s
@@ -195,11 +194,14 @@ main
 	form
 		padding: 3rem 0 0
 		display: flex
-		height: 16rem
-		width: 100%
+		height: 18rem
 		textarea, input
 			margin: 1rem
 			padding: .5rem
+			width: calc(100% - 4rem)
+		// make submit button same width as inputs
+		input[type=submit]
+			width: calc(100% - 3rem)
 		textarea
 			flex: 2
 		div
