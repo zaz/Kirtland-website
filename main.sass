@@ -239,13 +239,21 @@ body, main
 	a:hover
 		color: darken(#ecce73, 15%)
 
-@media screen and (max-width: 1274px)
-
-@media screen and (max-width: 865px)
+@media screen and (max-width: 940px)
 	header .detail
 		display: none
 
 @media screen and (max-width: 722px)
+	#contact form
+		textarea
+			height: 8rem
+			width: calc(100% - 2em)
+		div
+			width: 100%
+		div input
+			margin: 1em 0
+
+@media screen and (max-width: 688px)
 	main
 		padding-top: 13.5rem
 	header
@@ -258,17 +266,10 @@ body, main
 		margin-top: -2rem
 		> span
 			padding-top: 3rem
-	#contact form
-		padding-bottom: 6rem
-		display: block
-		textarea
-			width: 80%
-			height: 8rem
-			margin-bottom: 0
 
-@media screen and (max-width: 414px)
+@media screen and (max-width: 530px)
 	main
-		padding-top: 24rem
+		padding-top: 24.5rem
 	header
 		padding-bottom: 5.6rem
 		text-align: center
@@ -277,6 +278,8 @@ body, main
 			margin: 0
 		img
 			margin: 0 auto
+		a
+			padding: 0 3em
 	header > div > a:last-child
 		float: none
 
