@@ -100,6 +100,24 @@ header > div
 	h1
 		font-size: 2rem
 
+nav
+	position: fixed
+	z-index: 9
+	left: 0
+	right: 0
+	top: 160px
+	height: 1.3em
+	padding: .5rem 0
+	background: $secondary
+	box-shadow: 0 1px 2px #999
+	div
+		display: flex
+		justify-content: space-around
+		max-width: 1000px
+		margin: 0 auto
+		a
+			color: inherit
+
 footer
 	background: #fff
 	height: 8px
@@ -134,7 +152,7 @@ footer > address
 
 main
 	// adjust for fixed header
-	padding-top: 10rem
+	padding-top: 12.5rem
 
 #blurb, #quote, #call
 	text-align: center
@@ -207,8 +225,8 @@ main
 
 #about, #contact
 	// adjust for fixed header & section blurb
-	padding-top: 17rem
-	margin-top: -17rem
+	padding-top: 19.5rem
+	margin-top: -19.5rem
 	// prevent our padding hack from interfering with above element
 	position: relative
 	z-index: -7
