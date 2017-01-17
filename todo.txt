@@ -1,6 +1,5 @@
 + nav bar
 + spam control for contact form
-* colors
 fade "SEND" until required fields are complete
 obfuscate contact details with JS
 hone for multiple screen sizes
