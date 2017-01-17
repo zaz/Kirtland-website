@@ -1,1 +1,5 @@
 repository: zaz/kirtland-website
+defaults:
+  -
+    values:
+      layout: "main"
