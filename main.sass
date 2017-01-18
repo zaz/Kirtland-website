@@ -74,25 +74,27 @@ header
 	left: 0
 	right: 0
 	background: #fff
-	padding: 1rem
 	box-shadow: 0 0 2px #555
 
 header > div
 	font-family: 'Libre Baskerville', serif
 	max-width: 1000px
+	padding: 1rem
 	margin: 0 auto
+	// clearfix
+	overflow: hidden
 	a
 		display: inline-block
-		height: 128px
 		color: inherit
 		text-decoration: none
 	a:last-child
 		float: right
-		height: 96px
 		padding: 16px
+		img
+			height: 96px
 	img
 		vertical-align: middle
-		height: 100%
+		height: 128px
 		padding: 0 .4rem
 	h1, span
 		display: inline-block
@@ -107,11 +109,7 @@ header > div
 		font-size: 2rem
 
 nav
-	position: fixed
-	z-index: 9
-	left: 0
-	right: 0
-	top: 160px
+	display: block
 	height: 1.3em
 	padding: .5rem 0
 	background: $secondary
@@ -264,33 +262,37 @@ body, main
 		div input
 			margin: 1em 0
 
-@media screen and (max-width: 688px)
+@media screen and (max-width: 716px)
 	main
-		padding-top: 13.5rem
+		padding-top: 17rem
+	// don't adjust for fixed header
+	#about, #contact
+		padding-top: 8rem
+		margin-top: -8rem
 	header
 		position: absolute
-	header a:nth-child(1)
-		margin-bottom: -2rem
-		h1
-			padding-bottom: 3rem
-	header a:nth-child(2)
-		margin-top: -2rem
-		> span
-			padding-top: 3rem
+	header > div > a:nth-child(1)
+		padding: 0 0 1rem
 
 @media screen and (max-width: 530px)
 	main
-		padding-top: 24.5rem
+		padding-top: 27.5rem
+	// adjust for taller blurbs
+	#about
+		padding-top: 14rem
+		margin-top: -14rem
+	#contact
+		padding-top: 6rem
+		margin-top: -6rem
 	header
-		padding-bottom: 5.6rem
 		text-align: center
 		img, h1, span
 			display: block
 			margin: 0
 		img
 			margin: 0 auto
-		a
-			padding: 0 3em
+	header > div > a
+		display: block
 	header > div > a:last-child
 		float: none
 
