@@ -257,13 +257,13 @@ main
 	main
 		padding-top: 17rem
 	// don't adjust for fixed header
-	#about-body, #contact-body
-		padding-top: 8rem
-		margin-top: -8rem
+	#services, #about, #contact
+		padding-top: 1rem
+		margin-top: -.4rem
 	header
 		position: absolute
 	header > div > a:nth-child(1)
-		padding: 0 0 1rem
+		margin: 0 0 -3rem
 
 @media screen and (max-width: 530px)
 	main
@@ -277,6 +277,8 @@ main
 			margin: 0 auto
 	header > div > a
 		display: block
+	header > div > a:nth-child(1)
+		margin: 0
 	header > div > a:last-child
 		float: none
 
