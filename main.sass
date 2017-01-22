@@ -155,16 +155,22 @@ main
 	// adjust for fixed header
 	padding-top: 12.5rem
 
-#blurb, #quote, #call
+#services, #about, #contact
 	text-align: center
 	background: $primary
 	padding: 1rem
+	// adjust for fixed header & section blurb
+	padding-top: 13.4rem
+	margin-top: -12.4rem
+	// prevent our padding hack from interfering with above element
+	position: relative
+	z-index: -7
 
-#services, #error
+#services-body, #error
 	background: $background url(/r/bg_hatch.png)
 	border-bottom: 1px solid $secondary
 
-#services > ul, #error > p
+#services-body > ul, #error > p
 	padding: 2rem 0 0
 	text-align: center
 	h3
@@ -192,14 +198,14 @@ main
 #error > p
 	padding-top: 4rem
 
-#about
+#about-body
 	background: $background url(/r/bg_dot.png)
 	border-bottom: 1px solid $secondary
 	padding: 0 0 2rem
 	h2
 		margin: 0 0 2rem
 
-#contact
+#contact-body
 	background: $background url(/r/bg_hatch.png)
 	border-bottom: 1px solid $secondary
 	padding-bottom: 1rem
@@ -224,21 +230,6 @@ main
 			input[type=submit]
 				width: calc(100% - 1rem)
 
-#about, #contact
-	// adjust for fixed header & section blurb
-	padding-top: 19.5rem
-	margin-top: -19.5rem
-	// prevent our padding hack from interfering with above element
-	position: relative
-	z-index: -7
-#contact
-	z-index: -8
-// prevent our hack for the padding hack from preventing interaction with
-// about and contact sections
-body, main
-	position: relative
-	z-index: -9
-
 #credit
 	text-align: center
 	color: #999
@@ -253,7 +244,7 @@ body, main
 		display: none
 
 @media screen and (max-width: 722px)
-	#contact form
+	#contact-body form
 		textarea
 			height: 8rem
 			width: calc(100% - 2em)
@@ -266,7 +257,7 @@ body, main
 	main
 		padding-top: 17rem
 	// don't adjust for fixed header
-	#about, #contact
+	#about-body, #contact-body
 		padding-top: 8rem
 		margin-top: -8rem
 	header
@@ -277,13 +268,6 @@ body, main
 @media screen and (max-width: 530px)
 	main
 		padding-top: 27.5rem
-	// adjust for taller blurbs
-	#about
-		padding-top: 14rem
-		margin-top: -14rem
-	#contact
-		padding-top: 6rem
-		margin-top: -6rem
 	header
 		text-align: center
 		img, h1, span
