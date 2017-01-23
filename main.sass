@@ -184,8 +184,6 @@ main
 		width: 33%
 		min-width: 280px
 		padding: 2rem 0 0
-		.back
-			padding: 0 5%
 		img
 			height: 4rem
 			width: 4rem
@@ -201,9 +199,9 @@ main
 #team-body
 	background: $background url(/r/bg_dot.png)
 	border-bottom: 1px solid $secondary
-	padding: 0 0 2rem
+	padding: 0 2% 2rem
 	h2
-		margin: 0 0 2rem
+		margin: 0 -2% 2rem
 
 #contact-body
 	background: $background url(/r/bg_hatch.png)
@@ -281,6 +279,8 @@ main
 		margin: 0
 	header > div > a:last-child
 		float: none
+	#services-body > ul > li
+		height: auto
 
 @media screen and (max-width: 800px)
 	address .linkedin
