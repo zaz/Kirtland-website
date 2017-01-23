@@ -1,4 +1,3 @@
-+ spam control for contact form
 fade "SEND" until required fields are complete
 obfuscate contact details with JS
 hone for multiple screen sizes
@@ -18,3 +17,4 @@ x + endpoint for contact form
 x in-page links: scroll to correct position
 x in-page links: scroll smoothly
 x + contact form fields: company, tel
+x + spam control for contact form
