@@ -113,16 +113,22 @@ header > div, #caroline
 	margin-top: -1.5rem
 
 nav
-	display: block
-	height: 1.3em
-	padding: .5rem 0
-	background: $secondary
-	box-shadow: 0 1px 2px #999
-	div
-		display: flex
-		justify-content: space-around
-		max-width: 1000px
-		margin: 0 auto
+	display: inline-block
+	float: right
+	padding: 3.5rem 1rem
+	ul
+		display: inline
+		padding: 0
+		list-style: none
+		li
+			display: inline
+			padding: .5rem 0
+		li:before
+			content: "\22c5"
+			padding: 1rem
+		li:first-child:before
+			content: ""
+			padding: 0
 
 footer
 	background: #fff
@@ -157,15 +163,15 @@ footer > address
 
 main
 	// adjust for fixed header
-	padding-top: 12.5rem
+	padding-top: 10.4rem
 
 #services, #team, #contact
 	text-align: center
 	background: $primary
 	padding: 1rem
 	// adjust for fixed header & section blurb
-	padding-top: 13.4rem
-	margin-top: -12.4rem
+	padding-top: 11.4rem
+	margin-top: -10.4rem
 	// prevent our padding hack from interfering with above element
 	position: relative
 	z-index: -7
@@ -244,6 +250,16 @@ main
 		padding: 2rem 3rem 2rem 12rem
 		margin: -2rem -3rem -2rem -12rem
 
+@media screen and (max-width: 765px)
+	nav
+		padding: 1.5rem 1rem .5rem
+	// adjust for larger header
+	main
+		padding-top: 13.4rem
+	#services, #team, #contact
+		padding-top: 14.4rem
+		margin-top: -13.4rem
+
 @media screen and (max-width: 722px)
 	#contact-body form
 		textarea
@@ -264,15 +280,16 @@ main
 
 @media screen and (max-width: 400px)
 	main
-		padding-top: 17rem
+		padding-top: 18.4rem
 	header
+		position: absolute
 		text-align: center
 		img, h1, span
 			display: block
 			margin: 0
 		img
 			margin: 0 auto
-	#caroline > div
+	#caroline > div, nav
 		float: none
 		text-align: center
 		img
@@ -283,6 +300,16 @@ main
 		margin: 0
 	#services-body > ul > li
 		height: auto
+	// don't adjust for fixed header
+	#services, #team, #contact
+		padding-top: 1rem
+		margin-top: 0
+
+@media screen and (max-width: 375px)
+	nav
+		padding: 1.5rem 0 .5rem
+		ul li:before
+			padding: 0 .5rem
 
 @media screen and (max-width: 800px)
 	address .linkedin
