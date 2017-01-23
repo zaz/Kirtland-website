@@ -78,7 +78,7 @@ header
 	a
 		text-decoration: none
 
-header > div
+header > div, #caroline
 	font-family: 'Libre Baskerville', serif
 	max-width: 1000px
 	padding: 1rem
@@ -87,11 +87,6 @@ header > div
 	overflow: hidden
 	a
 		display: inline-block
-	a:last-child
-		float: right
-		padding: 16px
-		img
-			height: 96px
 	img
 		vertical-align: middle
 		height: 128px
@@ -107,6 +102,15 @@ header > div
 			padding: 0
 	h1
 		font-size: 2rem
+
+#caroline > div
+	float: right
+	text-align: right
+	padding: 0
+	img
+		height: 128px
+#team-body #caroline+h3
+	margin-top: -1.5rem
 
 nav
 	display: block
@@ -240,10 +244,6 @@ main
 		padding: 2rem 3rem 2rem 12rem
 		margin: -2rem -3rem -2rem -12rem
 
-@media screen and (max-width: 940px)
-	header .detail
-		display: none
-
 @media screen and (max-width: 722px)
 	#contact-body form
 		textarea
@@ -254,21 +254,17 @@ main
 		div input
 			margin: 1em 0
 
-@media screen and (max-width: 716px)
+@media screen and (max-width: 570px)
+	#caroline .detail
+		display: none
+
+@media screen and (max-width: 450px)
+	header .detail
+		display: none
+
+@media screen and (max-width: 400px)
 	main
 		padding-top: 17rem
-	// don't adjust for fixed header
-	#services, #team, #contact
-		padding-top: 1rem
-		margin-top: -.4rem
-	header
-		position: absolute
-	header > div > a:nth-child(1)
-		margin: 0 0 -3rem
-
-@media screen and (max-width: 530px)
-	main
-		padding-top: 27.5rem
 	header
 		text-align: center
 		img, h1, span
@@ -276,12 +272,15 @@ main
 			margin: 0
 		img
 			margin: 0 auto
-	header > div > a
-		display: block
+	#caroline > div
+		float: none
+		text-align: center
+		img
+			margin: 0 auto
+	#team-body #caroline+h3
+		margin-top: 0
 	header > div > a:nth-child(1)
 		margin: 0
-	header > div > a:last-child
-		float: none
 	#services-body > ul > li
 		height: auto
 
