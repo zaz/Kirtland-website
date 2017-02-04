@@ -1,8 +1,5 @@
 fade "SEND" until required fields are complete
 obfuscate contact details with JS
-hone for multiple screen sizes
-check in different browsers
-+ Google Analytics
 
 x + HTML content
 x + images
@@ -18,3 +15,6 @@ x in-page links: scroll to correct position
 x in-page links: scroll smoothly
 x + contact form fields: company, tel
 x + spam control for contact form
+x hone for multiple screen sizes
+x check in different browsers
+x + Google Analytics
