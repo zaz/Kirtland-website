@@ -279,23 +279,26 @@ main
 @media screen and (max-width: 450px)
 	header .detail
 		display: none
+	header
+		text-align: center
+		h1
+			text-align: left
+	#caroline > div, nav
+		float: none
 
 @media screen and (max-width: 400px)
 	main
 		padding-top: 18.4rem
 	header
 		position: absolute
-		text-align: center
 		img, h1, span
 			display: block
 			margin: 0
+			text-align: center
 		img
 			margin: 0 auto
-	#caroline > div, nav
-		float: none
-		text-align: center
-		img
-			margin: 0 auto
+	#caroline > div img, nav img
+		margin: 0 auto
 	#team-body #caroline+h3
 		margin-top: 0
 	header > div > a:nth-child(1)
