@@ -4,6 +4,18 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #333; }
 
+input[type=submit] {
+  background: #ecce73;
+  height: 3rem;
+  width: 8rem;
+  border-radius: 2px;
+  border: 1px solid #eeeecd;
+  transition: all 0.3s;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background: #e3b630; }
+
 .right {
   text-align: right; }
 
@@ -31,7 +43,7 @@ h2 {
   max-width: none;
   background: #eeeecd;
   margin: 0;
-  line-height: 2em;
+  line-height: 3rem;
   text-align: center; }
   h2:before {
     content: "";
@@ -41,7 +53,7 @@ h2 {
     left: 0;
     right: 0;
     top: -4px;
-    width: 10em;
+    width: 15rem;
     background: url(/r/flag_orange.svg) no-repeat;
     height: 200%; }
 
@@ -52,7 +64,7 @@ header {
   right: 0;
   background: #fff;
   height: 128px;
-  padding: 1em;
+  padding: 1rem;
   box-shadow: 0 0 2px #555; }
 
 header > div {
@@ -71,10 +83,10 @@ header > div {
     text-decoration: none; }
   header > div img {
     height: 100%;
-    padding: 1em 0.4em; }
+    padding: 1rem 0.4rem; }
   header > div h1, header > div span {
-    font-size: 1.5rem;
-    padding: 0 0.2em;
+    font-size: 1.3rem;
+    padding: 0 0.2rem;
     white-space: nowrap; }
     header > div h1 span, header > div span span {
       padding: 0; }
@@ -87,7 +99,7 @@ footer {
   right: 0;
   background: #fff;
   height: 8px;
-  padding: 1em;
+  padding: 1rem;
   box-shadow: 0 0 2px #555; }
 
 footer > address {
@@ -107,7 +119,7 @@ footer > address {
     text-decoration: none; }
   footer > address .a:before, footer > address .p:before, footer > address .e:before {
     font-weight: 700;
-    padding-right: 0.5em; }
+    padding-right: 0.5rem; }
   footer > address .a:before {
     content: "A"; }
   footer > address .p:before {
@@ -116,56 +128,88 @@ footer > address {
     content: "E"; }
 
 main {
-  padding-top: 10em;
+  padding-top: 10rem;
   padding-bottom: 8px; }
 
 #blurb {
   text-align: center;
   background: #ecce73;
-  padding: 1em; }
+  padding: 1rem; }
 
 #quote {
   background: #ecce73;
-  padding: 1em; }
+  padding: 1rem; }
 
-#services {
+#services, #error {
   background: #f8f8eb url(/r/bg_beige_hatch.png);
   border: 1px solid #eeeecd; }
 
-#services > ul {
-  padding: 1.5em 0;
+#services > ul, #error > p {
+  padding: 1.5rem 0;
   text-align: center;
   border: none; }
-  #services > ul h3 {
+  #services > ul h3, #error > p h3 {
     display: block;
     font-weight: 700;
     margin-bottom: 0; }
-  #services > ul li {
+  #services > ul li, #error > p li {
     display: inline-block;
     position: relative;
     list-style: none;
-    height: 10em;
+    height: 10rem;
     width: 33%;
     min-width: 280px; }
-    #services > ul li .face, #services > ul li .back {
+    #services > ul li .face, #services > ul li .back, #error > p li .face, #error > p li .back {
       position: absolute;
       top: 50%;
       transition: all 0.25s;
       backface-visibility: hidden; }
-    #services > ul li .face {
+    #services > ul li .face, #error > p li .face {
       left: 0;
       right: 0;
       transform: translateY(-50%); }
-    #services > ul li .back {
+    #services > ul li .back, #error > p li .back {
       transform: translateY(-50%) rotateX(180deg);
       width: 90%;
       padding: 0 5%; }
-    #services > ul li:hover .face, #services > ul li:hover .back {
+    #services > ul li:hover .face, #services > ul li:hover .back, #error > p li:hover .face, #error > p li:hover .back {
       transition: all 0.5s; }
-    #services > ul li:hover .face {
+    #services > ul li:hover .face, #error > p li:hover .face {
       transform: translateY(-50%) rotateX(180deg); }
-    #services > ul li:hover .back {
+    #services > ul li:hover .back, #error > p li:hover .back {
       transform: translateY(-50%) rotateX(0deg); }
-    #services > ul li img {
-      height: 4em;
-      width: 4em; }
+    #services > ul li img, #error > p li img {
+      height: 4rem;
+      width: 4rem; }
+
+#error {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  border: none; }
+
+#error > p {
+  padding-top: 4rem; }
+
+#about {
+  background: #f8f8eb url(/r/bg_beige_dot.png);
+  border: 1px solid #eeeecd; }
+
+#contact {
+  background: #f8f8eb url(/r/bg_beige_grid.png);
+  border: 1px solid #eeeecd; }
+  #contact form {
+    padding: 3rem 0 5rem 0;
+    display: flex;
+    height: 16rem;
+    width: 100%; }
+    #contact form textarea, #contact form input {
+      margin: 1rem;
+      padding: 0.5rem; }
+    #contact form textarea {
+      flex: 2; }
+    #contact form div {
+      flex: 1;
+      display: block; }
+      #contact form div input {
+        display: block; }

@@ -132,6 +132,15 @@
 
 	<section id="contact">
 		<h2>Contact</h2>
+		<form action="/send-message" method="post">
+			<textarea type="text" name="message" placeholder="Message" required=""></textarea>
+			<div>
+				<input type="text" name="name" placeholder="Name" required="">
+				<input type="email" name="email" placeholder="Email" required="">
+				<input type="text" name="human" placeholder="Six × Nine" required="">
+				<input type="submit" value="SEND">
+			</div>
+		</form>
 	</section>
 
 </main>

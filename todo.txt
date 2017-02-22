@@ -1,8 +1,10 @@
-+ 404 page
+in-page links: scroll to correct position
+in-page links: scroll smoothly
++ endpoint for contact form
+fade "SEND" until required fields are complete
 format quote better
 speed up links with pre-caching or pre-fetching
 obfuscate contact details with JS
-* background
 hone for multiple screen sizes
 + credit link
 check in different browsers
@@ -13,3 +15,5 @@ x style header
 x find icons for services
 x put services in boxes
 x + favicon
+x + background
+x + 404 page
