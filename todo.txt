@@ -1,5 +1,3 @@
-in-page links: scroll to correct position
-in-page links: scroll smoothly
 + captcha for contact form
 fade "SEND" until required fields are complete
 format quote better
@@ -19,3 +17,5 @@ x + background
 x + 404 page
 x + credit link
 x + endpoint for contact form
+x in-page links: scroll to correct position
+x in-page links: scroll smoothly

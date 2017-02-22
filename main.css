@@ -10,12 +10,13 @@ input[type=submit] {
   height: 3rem;
   width: 8rem;
   border-radius: 2px;
-  border: 1px solid #bdd749;
+  border: 1px solid #277935;
   transition: all 0.3s;
   cursor: pointer; }
 
 input[type=submit]:hover {
-  background: #277935; }
+  background: #69cf7c;
+  border: 1px solid #39b34f; }
 
 .right {
   text-align: right; }
@@ -132,12 +133,8 @@ main {
   padding-top: 10rem;
   padding-bottom: 8px; }
 
-#blurb {
+#blurb, #quote, #call {
   text-align: center;
-  background: #39b34f;
-  padding: 1rem; }
-
-#quote {
   background: #39b34f;
   padding: 1rem; }
 
@@ -194,10 +191,13 @@ main {
 
 #about {
   background: #f6f6f6 url(/r/bg_dot.png);
-  border-bottom: 1px solid #bdd749; }
+  border-bottom: 1px solid #bdd749;
+  padding: 0 0 2rem; }
+  #about h2 {
+    margin: 0 0 2rem; }
 
 #contact {
-  background: #f6f6f6 url(/r/bg_grid.png);
+  background: #f6f6f6 url(/r/bg_hatch.png);
   border-bottom: 1px solid #bdd749;
   padding-bottom: 2rem; }
   #contact form {
@@ -215,6 +215,12 @@ main {
       display: block; }
       #contact form div input {
         display: block; }
+
+#about, #contact {
+  padding-top: 9rem;
+  margin-top: -9rem;
+  position: relative;
+  z-index: -9; }
 
 #credit {
   text-align: center;
