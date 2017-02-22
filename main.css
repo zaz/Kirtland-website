@@ -32,5 +32,16 @@ header {
     font-size: 1.5em;
     padding: 0 0.2em; }
 
+dl {
+  display: flex; }
+  dl dt {
+    display: block;
+    font-weight: 700; }
+  dl dd {
+    width: 16em; }
+    dl dd img {
+      height: 4em;
+      width: 4em; }
+
 body {
   font-family: "Open Sans", sans-serif; }
