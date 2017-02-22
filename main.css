@@ -84,6 +84,10 @@ main {
   background: #ecce73;
   padding: 1em; }
 
+#quote {
+  background: #ecce73;
+  padding: 1em; }
+
 #services {
   background: #f8f8eb url(/r/bg_beige_hatch.png);
   border: 1px solid #eeeecd; }
