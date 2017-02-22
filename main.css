@@ -9,9 +9,15 @@ blockquote {
   blockquote footer {
     float: right; }
 
+header, section > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px; }
+
 h2 {
   position: relative;
   z-index: 0;
+  max-width: none;
   background: #eeeecd;
   margin: 0;
   color: #fafafa;
@@ -28,10 +34,6 @@ h2 {
     width: 10em;
     background: url(/r/flag_orange.svg) no-repeat;
     height: 200%; }
-
-header, main {
-  margin: 0 auto;
-  max-width: 1000px; }
 
 header {
   display: flex;
@@ -53,44 +55,47 @@ header {
     padding: 0 0.2em; }
 
 #services {
-  margin: 0;
-  padding: 3em 0 1.5em 0;
-  text-align: center;
   background: #f8f8eb url(/r/bg_beige_hatch.png);
   border: 1px solid #eeeecd; }
-  #services h3 {
+
+#services > ul {
+  padding: 1.5em 0;
+  text-align: center;
+  border: none; }
+  #services > ul h3 {
     display: block;
     font-weight: 700;
     margin-bottom: 0; }
-  #services li {
+  #services > ul li {
     display: inline-block;
     position: relative;
     list-style: none;
     height: 10em;
     width: 33%;
     min-width: 280px; }
-    #services li .face, #services li .back {
+    #services > ul li .face, #services > ul li .back {
       position: absolute;
       top: 50%;
       transition: all 0.25s;
       backface-visibility: hidden; }
-    #services li .face {
+    #services > ul li .face {
       left: 0;
       right: 0;
       transform: translateY(-50%); }
-    #services li .back {
+    #services > ul li .back {
       transform: translateY(-50%) rotateX(180deg);
       width: 90%;
       padding: 0 5%; }
-    #services li:hover .face, #services li:hover .back {
+    #services > ul li:hover .face, #services > ul li:hover .back {
       transition: all 0.5s; }
-    #services li:hover .face {
+    #services > ul li:hover .face {
       transform: translateY(-50%) rotateX(180deg); }
-    #services li:hover .back {
+    #services > ul li:hover .back {
       transform: translateY(-50%) rotateX(0deg); }
-    #services li img {
+    #services > ul li img {
       height: 4em;
       width: 4em; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  margin: 0; }
