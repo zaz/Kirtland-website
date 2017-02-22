@@ -1,316 +1,110 @@
 @charset "UTF-8";
-body {
-  margin: 0;
-  font-family: "Lusitana", serif;
-  font-size: 1.1rem;
-  color: #333;
-  overflow-x: hidden; }
+body { margin: 0; font-family: "Lusitana", serif; font-size: 1.1rem; color: #333; overflow-x: hidden; }
 
-a {
-  color: inherit;
-  transition: all 0.3s; }
+a { color: inherit; transition: all 0.3s; }
 
-a:hover {
-  color: #389ea0; }
+a:hover { color: #389ea0; }
 
-input[type=submit] {
-  background: #71cbcd;
-  height: 3rem;
-  border-radius: 2px;
-  border: 1px solid #3fb0b3;
-  transition: all 0.3s;
-  cursor: pointer; }
+input[type=submit] { background: #71cbcd; height: 3rem; border-radius: 2px; border: 1px solid #3fb0b3; transition: all 0.3s; cursor: pointer; }
 
-input[type=submit]:hover {
-  background: #aae0e1;
-  border: 1px solid #71cbcd; }
+input[type=submit]:hover { background: #aae0e1; border: 1px solid #71cbcd; }
 
-.right {
-  text-align: right; }
+.right { text-align: right; }
 
-.circle {
-  border-radius: 50%; }
+.circle { border-radius: 50%; }
 
-blockquote {
-  overflow: hidden; }
-  blockquote cite {
-    float: right; }
-    blockquote cite:before {
-      content: "— "; }
+blockquote { overflow: hidden; }
+blockquote cite { float: right; }
+blockquote cite:before { content: "— "; }
 
-.hide-detail .detail {
-  display: none; }
+.hide-detail .detail { display: none; }
 
-section > * {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1000px; }
+section > * { margin-left: auto; margin-right: auto; max-width: 1000px; }
 
-h2 {
-  position: relative;
-  z-index: 0;
-  max-width: none;
-  background: #e9e9e9;
-  margin: 0;
-  line-height: 3rem;
-  text-align: center; }
-  h2:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: -4px;
-    width: 15rem;
-    background: url(/r/flag_blue.svg) no-repeat;
-    height: 200%; }
+h2 { position: relative; z-index: 0; max-width: none; background: #e9e9e9; margin: 0; line-height: 3rem; text-align: center; }
+h2:before { content: ""; position: absolute; z-index: -1; margin: 0 auto; left: 0; right: 0; top: -4px; width: 15rem; background: url(/r/flag_blue.svg) no-repeat; height: 200%; }
 
-header {
-  position: fixed;
-  z-index: 9;
-  left: 0;
-  right: 0;
-  background: #fff;
-  box-shadow: 0 0 2px #555; }
-  header a {
-    text-decoration: none; }
+header { position: fixed; z-index: 9; left: 0; right: 0; background: #fff; box-shadow: 0 0 2px #555; }
+header a { text-decoration: none; }
 
-header > div, #caroline {
-  font-family: "Libre Baskerville", serif;
-  max-width: 1000px;
-  padding: 1rem;
-  margin: 0 auto;
-  overflow: hidden; }
-  header > div a, #caroline a {
-    display: inline-block; }
-  header > div img, #caroline img {
-    vertical-align: middle;
-    height: 128px;
-    padding: 0 0.4rem; }
-  header > div h1, header > div span, #caroline h1, #caroline span {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 1.3rem;
-    font-weight: 400;
-    padding: 0 0.2rem; }
-    header > div h1 span, header > div span span, #caroline h1 span, #caroline span span {
-      padding: 0; }
-  header > div h1, #caroline h1 {
-    font-size: 2rem; }
+header > div, #caroline { font-family: "Libre Baskerville", serif; max-width: 1000px; padding: 1rem; margin: 0 auto; overflow: hidden; }
+header > div a, #caroline a { display: inline-block; }
+header > div img, #caroline img { vertical-align: middle; height: 128px; padding: 0 0.4rem; }
+header > div h1, header > div span, #caroline h1, #caroline span { display: inline-block; vertical-align: middle; font-size: 1.3rem; font-weight: 400; padding: 0 0.2rem; }
+header > div h1 span, header > div span span, #caroline h1 span, #caroline span span { padding: 0; }
+header > div h1, #caroline h1 { font-size: 2rem; }
 
-#caroline > div {
-  float: right;
-  text-align: right;
-  padding: 0; }
-  #caroline > div img {
-    height: 128px; }
+#caroline > div { float: right; text-align: right; padding: 0; }
+#caroline > div img { height: 128px; }
 
-#team-body #caroline + h3 {
-  margin-top: -1.5rem; }
+#team-body #caroline + h3 { margin-top: -1.5rem; }
 
-nav {
-  display: inline-block;
-  float: right;
-  padding: 3.5rem 1rem; }
-  nav ul {
-    display: inline;
-    padding: 0;
-    list-style: none; }
-    nav ul li {
-      display: inline;
-      padding: 0.5rem 0; }
-    nav ul li:before {
-      content: "⋅";
-      padding: 1rem; }
-    nav ul li:first-child:before {
-      content: "";
-      padding: 0; }
+nav { display: inline-block; float: right; padding: 3.5rem 1rem; }
+nav ul { display: inline; padding: 0; list-style: none; white-space: nowrap; }
+nav ul li { display: inline; padding: 0.5rem 0; }
+nav ul li:before { content: "⋅"; padding: 1rem; }
+nav ul li:first-child:before { content: ""; padding: 0; }
 
-footer {
-  background: #fff;
-  height: 8px;
-  padding: 1rem;
-  box-shadow: 0 0 2px #555;
-  font-size: 1rem; }
+footer { background: #fff; height: 8px; padding: 1rem; box-shadow: 0 0 2px #555; font-size: 1rem; }
 
-footer > address {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  font-style: normal; }
-  footer > address a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-decoration: none; }
-  footer > address .a:before, footer > address .p:before, footer > address .e:before {
-    font-weight: 700;
-    padding-right: 0.5rem; }
-  footer > address .a:before {
-    content: "A"; }
-  footer > address .p:before {
-    content: "P"; }
-  footer > address .e:before {
-    content: "E"; }
+footer > address { display: flex; justify-content: space-between; height: 100%; max-width: 1000px; margin-left: auto; margin-right: auto; font-style: normal; }
+footer > address a { display: flex; align-items: center; height: 100%; text-decoration: none; }
+footer > address .a:before, footer > address .p:before, footer > address .e:before { font-weight: 700; padding-right: 0.5rem; }
+footer > address .a:before { content: "A"; }
+footer > address .p:before { content: "P"; }
+footer > address .e:before { content: "E"; }
 
-main {
-  padding-top: 10.4rem; }
+main { padding-top: 10.4rem; }
 
-#services, #team, #contact {
-  text-align: center;
-  background: #71cbcd;
-  padding: 1rem;
-  padding-top: 11.4rem;
-  margin-top: -10.4rem;
-  position: relative;
-  z-index: -7; }
+#services, #team, #contact { text-align: center; background: #71cbcd; padding: 1rem; padding-top: 11.4rem; margin-top: -10.4rem; position: relative; z-index: -7; }
 
-#services {
-  font-size: 1.25rem; }
+#services { font-size: 1.25rem; }
 
-#services-body, #error {
-  background: #f6f6f6 url(/r/bg_hatch.png);
-  border-bottom: 1px solid #e9e9e9; }
+#services-body, #error { background: #f6f6f6 url(/r/bg_hatch.png); border-bottom: 1px solid #e9e9e9; }
 
-#services-body > ul, #error > p {
-  padding: 2rem 0 0;
-  text-align: center; }
-  #services-body > ul h3, #error > p h3 {
-    font-weight: 700;
-    margin-bottom: 0; }
-  #services-body > ul li, #error > p li {
-    display: inline-block;
-    vertical-align: top;
-    list-style: none;
-    height: 17rem;
-    width: 33%;
-    min-width: 280px;
-    padding: 2rem 0 0; }
-    #services-body > ul li img, #error > p li img {
-      height: 4rem;
-      width: 4rem; }
+#services-body > ul, #error > p { padding: 2rem 0 0; text-align: center; }
+#services-body > ul h3, #error > p h3 { font-weight: 700; margin-bottom: 0; }
+#services-body > ul li, #error > p li { display: inline-block; vertical-align: top; list-style: none; height: 17rem; width: 33%; min-width: 280px; padding: 2rem 0 0; }
+#services-body > ul li img, #error > p li img { height: 4rem; width: 4rem; }
 
-#error {
-  position: absolute;
-  height: 70%;
-  width: 100%;
-  border: none; }
+#error { position: absolute; height: 70%; width: 100%; border: none; }
 
-#error > p {
-  padding-top: 4rem; }
+#error > p { padding-top: 4rem; }
 
-#team-body {
-  background: #f6f6f6 url(/r/bg_dot.png);
-  border-bottom: 1px solid #e9e9e9;
-  padding: 0 2% 2rem; }
-  #team-body h2 {
-    margin: 0 -2% 2rem; }
+#team-body { background: #f6f6f6 url(/r/bg_dot.png); border-bottom: 1px solid #e9e9e9; padding: 0 2% 2rem; }
+#team-body h2 { margin: 0 -2% 2rem; }
 
-#contact-body {
-  background: #f6f6f6 url(/r/bg_hatch.png);
-  border-bottom: 1px solid #e9e9e9;
-  padding-bottom: 1rem; }
-  #contact-body form {
-    padding: 4rem 1% 2rem; }
-    #contact-body form textarea {
-      width: 64%;
-      height: 16.4rem;
-      padding: 0.5rem;
-      font-size: 1.4rem; }
-    #contact-body form div {
-      display: inline-block;
-      vertical-align: top;
-      width: 32%; }
-      #contact-body form div input {
-        display: block;
-        margin: 0 1rem 1rem;
-        padding: 0.5rem;
-        width: calc(100% - 2rem);
-        font-size: 1.2rem; }
-      #contact-body form div input[type=submit] {
-        width: calc(100% - 1rem); }
+#contact-body { background: #f6f6f6 url(/r/bg_hatch.png); border-bottom: 1px solid #e9e9e9; padding-bottom: 1rem; }
+#contact-body form { padding: 4rem 1% 2rem; }
+#contact-body form textarea { width: 64%; height: 16.4rem; padding: 0.5rem; font-size: 1.4rem; }
+#contact-body form div { display: inline-block; vertical-align: top; width: 32%; }
+#contact-body form div input { display: block; margin: 0 1rem 1rem; padding: 0.5rem; width: calc(100% - 2rem); font-size: 1.2rem; }
+#contact-body form div input[type=submit] { width: calc(100% - 1rem); }
 
-#credit {
-  text-align: center;
-  color: #999;
-  padding: 1em 0 0; }
-  #credit a {
-    padding: 2rem 3rem 2rem 12rem;
-    margin: -2rem -3rem -2rem -12rem; }
+#credit { text-align: center; color: #999; padding: 1em 0 0; }
+#credit a { padding: 2rem 3rem 2rem 12rem; margin: -2rem -3rem -2rem -12rem; }
 
-@media screen and (max-width: 765px) {
-  nav {
-    padding: 1.5rem 1rem 0.5rem; }
-
-  main {
-    padding-top: 13.4rem; }
-
-  #services, #team, #contact {
-    padding-top: 14.4rem;
-    margin-top: -13.4rem; } }
-@media screen and (max-width: 722px) {
-  #contact-body form textarea {
-    height: 8rem;
-    width: calc(100% - 2em); }
-  #contact-body form div {
-    width: 100%; }
-  #contact-body form div input {
-    margin: 1em 0; } }
-@media screen and (max-width: 570px) {
-  #caroline .detail {
-    display: none; } }
-@media screen and (max-width: 450px) {
-  header .detail {
-    display: none; } }
-@media screen and (max-width: 400px) {
-  main {
-    padding-top: 18.4rem; }
-
-  header {
-    position: absolute;
-    text-align: center; }
-    header img, header h1, header span {
-      display: block;
-      margin: 0; }
-    header img {
-      margin: 0 auto; }
-
-  #caroline > div, nav {
-    float: none;
-    text-align: center; }
-    #caroline > div img, nav img {
-      margin: 0 auto; }
-
-  #team-body #caroline + h3 {
-    margin-top: 0; }
-
-  header > div > a:nth-child(1) {
-    margin: 0; }
-
-  #services-body > ul > li {
-    height: auto; }
-
-  #services, #team, #contact {
-    padding-top: 1rem;
-    margin-top: 0; } }
-@media screen and (max-width: 375px) {
-  nav {
-    padding: 1.5rem 0 0.5rem; }
-    nav ul li:before {
-      padding: 0 0.5rem; } }
-@media screen and (max-width: 800px) {
-  address .linkedin {
-    display: none; } }
-@media screen and (max-width: 740px) {
-  address .e .detail {
-    display: none; } }
-@media screen and (max-width: 580px) {
-  address .a .detail {
-    display: none; } }
-@media screen and (max-width: 440px) {
-  address .e {
-    display: none; } }
+@media screen and (max-width: 765px) { nav { padding: 1.5rem 1rem 0.5rem; }
+  main { padding-top: 13.4rem; }
+  #services, #team, #contact { padding-top: 14.4rem; margin-top: -13.4rem; } }
+@media screen and (max-width: 722px) { #contact-body form textarea { height: 8rem; width: calc(100% - 2em); }
+  #contact-body form div { width: 100%; }
+  #contact-body form div input { margin: 1em 0; } }
+@media screen and (max-width: 570px) { #caroline .detail { display: none; } }
+@media screen and (max-width: 450px) { header .detail { display: none; } }
+@media screen and (max-width: 400px) { main { padding-top: 18.4rem; }
+  header { position: absolute; text-align: center; }
+  header img, header h1, header span { display: block; margin: 0; }
+  header img { margin: 0 auto; }
+  #caroline > div, nav { float: none; text-align: center; }
+  #caroline > div img, nav img { margin: 0 auto; }
+  #team-body #caroline + h3 { margin-top: 0; }
+  header > div > a:nth-child(1) { margin: 0; }
+  #services-body > ul > li { height: auto; }
+  #services, #team, #contact { padding-top: 1rem; margin-top: 0; } }
+@media screen and (max-width: 375px) { nav { padding: 1.5rem 0 0.5rem; }
+  nav ul li:before { padding: 0 0.5rem; } }
+@media screen and (max-width: 800px) { address .linkedin { display: none; } }
+@media screen and (max-width: 740px) { address .e .detail { display: none; } }
+@media screen and (max-width: 580px) { address .a .detail { display: none; } }
+@media screen and (max-width: 440px) { address .e { display: none; } }
