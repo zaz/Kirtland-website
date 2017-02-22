@@ -1,7 +1,7 @@
-+ captcha for contact form
++ nav bar
++ spam control for contact form
+* colors
 fade "SEND" until required fields are complete
-format quote better
-speed up links with pre-caching or pre-fetching
 obfuscate contact details with JS
 hone for multiple screen sizes
 check in different browsers
@@ -19,3 +19,4 @@ x + credit link
 x + endpoint for contact form
 x in-page links: scroll to correct position
 x in-page links: scroll smoothly
+x + contact form fields: company, tel
