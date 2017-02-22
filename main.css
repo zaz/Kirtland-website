@@ -1,7 +1,8 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lusitana", serif;
+  font-size: 1.1rem;
   color: #333; }
 
 input[type=submit] {
@@ -71,7 +72,7 @@ header > div {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Libre Baskerville", serif;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto; }
@@ -100,13 +101,13 @@ footer {
   background: #fff;
   height: 8px;
   padding: 1rem;
-  box-shadow: 0 0 2px #555; }
+  box-shadow: 0 0 2px #555;
+  font-size: 1rem; }
 
 footer > address {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -141,8 +142,8 @@ main {
   padding: 1rem; }
 
 #services, #error {
-  background: #f8f8eb url(/r/bg_beige_hatch.png);
-  border: 1px solid #eeeecd; }
+  background: #f8f8f8 url(/r/bg_hatch.png);
+  border-bottom: 1px solid #eeeecd; }
 
 #services > ul, #error > p {
   padding: 1.5rem 0;
@@ -192,14 +193,15 @@ main {
   padding-top: 4rem; }
 
 #about {
-  background: #f8f8eb url(/r/bg_beige_dot.png);
-  border: 1px solid #eeeecd; }
+  background: #f8f8f8 url(/r/bg_dot.png);
+  border-bottom: 1px solid #eeeecd; }
 
 #contact {
-  background: #f8f8eb url(/r/bg_beige_grid.png);
-  border: 1px solid #eeeecd; }
+  background: #f8f8f8 url(/r/bg_grid.png);
+  border-bottom: 1px solid #eeeecd;
+  padding-bottom: 2rem; }
   #contact form {
-    padding: 3rem 0 5rem 0;
+    padding: 3rem 0 0;
     display: flex;
     height: 16rem;
     width: 100%; }
@@ -213,3 +215,15 @@ main {
       display: block; }
       #contact form div input {
         display: block; }
+
+#credit {
+  text-align: center;
+  color: #777;
+  padding: 1em 0 0; }
+  #credit a {
+    color: inherit;
+    transition: all 0.3s;
+    padding: 2rem 3rem 2rem 12rem;
+    margin: -2rem -3rem -2rem -12rem; }
+  #credit a:hover {
+    color: #e3b630; }
