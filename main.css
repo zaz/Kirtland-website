@@ -76,33 +76,38 @@ header {
   header a {
     text-decoration: none; }
 
-header > div {
+header > div, #caroline {
   font-family: "Libre Baskerville", serif;
   max-width: 1000px;
   padding: 1rem;
   margin: 0 auto;
   overflow: hidden; }
-  header > div a {
+  header > div a, #caroline a {
     display: inline-block; }
-  header > div a:last-child {
-    float: right;
-    padding: 16px; }
-    header > div a:last-child img {
-      height: 96px; }
-  header > div img {
+  header > div img, #caroline img {
     vertical-align: middle;
     height: 128px;
     padding: 0 0.4rem; }
-  header > div h1, header > div span {
+  header > div h1, header > div span, #caroline h1, #caroline span {
     display: inline-block;
     vertical-align: middle;
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0 0.2rem; }
-    header > div h1 span, header > div span span {
+    header > div h1 span, header > div span span, #caroline h1 span, #caroline span span {
       padding: 0; }
-  header > div h1 {
+  header > div h1, #caroline h1 {
     font-size: 2rem; }
+
+#caroline > div {
+  float: right;
+  text-align: right;
+  padding: 0; }
+  #caroline > div img {
+    height: 128px; }
+
+#team-body #caroline + h3 {
+  margin-top: -1.5rem; }
 
 nav {
   display: block;
@@ -231,9 +236,6 @@ main {
     padding: 2rem 3rem 2rem 12rem;
     margin: -2rem -3rem -2rem -12rem; }
 
-@media screen and (max-width: 940px) {
-  header .detail {
-    display: none; } }
 @media screen and (max-width: 722px) {
   #contact-body form textarea {
     height: 8rem;
@@ -242,22 +244,15 @@ main {
     width: 100%; }
   #contact-body form div input {
     margin: 1em 0; } }
-@media screen and (max-width: 716px) {
+@media screen and (max-width: 570px) {
+  #caroline .detail {
+    display: none; } }
+@media screen and (max-width: 450px) {
+  header .detail {
+    display: none; } }
+@media screen and (max-width: 400px) {
   main {
     padding-top: 17rem; }
-
-  #services, #team, #contact {
-    padding-top: 1rem;
-    margin-top: -0.4rem; }
-
-  header {
-    position: absolute; }
-
-  header > div > a:nth-child(1) {
-    margin: 0 0 -3rem; } }
-@media screen and (max-width: 530px) {
-  main {
-    padding-top: 27.5rem; }
 
   header {
     text-align: center; }
@@ -267,14 +262,17 @@ main {
     header img {
       margin: 0 auto; }
 
-  header > div > a {
-    display: block; }
+  #caroline > div {
+    float: none;
+    text-align: center; }
+    #caroline > div img {
+      margin: 0 auto; }
+
+  #team-body #caroline + h3 {
+    margin-top: 0; }
 
   header > div > a:nth-child(1) {
     margin: 0; }
-
-  header > div > a:last-child {
-    float: none; }
 
   #services-body > ul > li {
     height: auto; } }
