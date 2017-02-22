@@ -14,7 +14,10 @@ blockquote {
   blockquote footer {
     float: right; }
 
-header, section > * {
+.hide-detail .detail {
+  display: none; }
+
+section > * {
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px; }
@@ -25,7 +28,6 @@ h2 {
   max-width: none;
   background: #eeeecd;
   margin: 0;
-  color: #fafafa;
   line-height: 2em;
   text-align: center; }
   h2:before {
@@ -41,30 +43,45 @@ h2 {
     height: 200%; }
 
 header {
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  background: #fff;
+  height: 128px;
+  padding: 1em;
+  box-shadow: 0 0 2px #555; }
+
+header > div {
   display: flex;
   justify-content: space-between;
-  height: 8em;
-  padding: 1em 0;
-  font-family: "Ubuntu", sans-serif; }
-  header a {
+  height: 100%;
+  font-family: "Ubuntu", sans-serif;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  header > div a {
     display: flex;
     align-items: center;
+    height: 100%;
     color: inherit;
     text-decoration: none; }
-  header img {
-    height: 8em;
-    display: inline;
-    padding: 0.4em; }
-  header h1, header span {
-    font-size: 1.5em;
-    padding: 0 0.2em; }
+  header > div img {
+    height: 100%;
+    padding: 1em 0.4em; }
+  header > div h1, header > div span {
+    font-size: 1.5rem;
+    padding: 0 0.2em;
+    white-space: nowrap; }
+    header > div h1 span, header > div span span {
+      padding: 0; }
 
-section {
-  margin: 0; }
+main {
+  padding-top: 10em; }
 
 #blurb {
   text-align: center;
-  background: #7dcc3c;
+  background: #ecce73;
   padding: 1em; }
 
 #services {
