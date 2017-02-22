@@ -110,16 +110,22 @@ header > div, #caroline {
   margin-top: -1.5rem; }
 
 nav {
-  display: block;
-  height: 1.3em;
-  padding: 0.5rem 0;
-  background: #e9e9e9;
-  box-shadow: 0 1px 2px #999; }
-  nav div {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1000px;
-    margin: 0 auto; }
+  display: inline-block;
+  float: right;
+  padding: 3.5rem 1rem; }
+  nav ul {
+    display: inline;
+    padding: 0;
+    list-style: none; }
+    nav ul li {
+      display: inline;
+      padding: 0.5rem 0; }
+    nav ul li:before {
+      content: "⋅";
+      padding: 1rem; }
+    nav ul li:first-child:before {
+      content: "";
+      padding: 0; }
 
 footer {
   background: #fff;
@@ -152,14 +158,14 @@ footer > address {
     content: "E"; }
 
 main {
-  padding-top: 12.5rem; }
+  padding-top: 10.4rem; }
 
 #services, #team, #contact {
   text-align: center;
   background: #71cbcd;
   padding: 1rem;
-  padding-top: 13.4rem;
-  margin-top: -12.4rem;
+  padding-top: 11.4rem;
+  margin-top: -10.4rem;
   position: relative;
   z-index: -7; }
 
@@ -236,6 +242,16 @@ main {
     padding: 2rem 3rem 2rem 12rem;
     margin: -2rem -3rem -2rem -12rem; }
 
+@media screen and (max-width: 765px) {
+  nav {
+    padding: 1.5rem 1rem 0.5rem; }
+
+  main {
+    padding-top: 13.4rem; }
+
+  #services, #team, #contact {
+    padding-top: 14.4rem;
+    margin-top: -13.4rem; } }
 @media screen and (max-width: 722px) {
   #contact-body form textarea {
     height: 8rem;
@@ -252,9 +268,10 @@ main {
     display: none; } }
 @media screen and (max-width: 400px) {
   main {
-    padding-top: 17rem; }
+    padding-top: 18.4rem; }
 
   header {
+    position: absolute;
     text-align: center; }
     header img, header h1, header span {
       display: block;
@@ -262,10 +279,10 @@ main {
     header img {
       margin: 0 auto; }
 
-  #caroline > div {
+  #caroline > div, nav {
     float: none;
     text-align: center; }
-    #caroline > div img {
+    #caroline > div img, nav img {
       margin: 0 auto; }
 
   #team-body #caroline + h3 {
@@ -275,7 +292,16 @@ main {
     margin: 0; }
 
   #services-body > ul > li {
-    height: auto; } }
+    height: auto; }
+
+  #services, #team, #contact {
+    padding-top: 1rem;
+    margin-top: 0; } }
+@media screen and (max-width: 375px) {
+  nav {
+    padding: 1.5rem 0 0.5rem; }
+    nav ul li:before {
+      padding: 0 0.5rem; } }
 @media screen and (max-width: 800px) {
   address .linkedin {
     display: none; } }
