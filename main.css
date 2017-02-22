@@ -6,16 +6,16 @@ body {
   color: #333; }
 
 input[type=submit] {
-  background: #ecce73;
+  background: #39b34f;
   height: 3rem;
   width: 8rem;
   border-radius: 2px;
-  border: 1px solid #eeeecd;
+  border: 1px solid #bdd749;
   transition: all 0.3s;
   cursor: pointer; }
 
 input[type=submit]:hover {
-  background: #e3b630; }
+  background: #277935; }
 
 .right {
   text-align: right; }
@@ -42,7 +42,7 @@ h2 {
   position: relative;
   z-index: 0;
   max-width: none;
-  background: #eeeecd;
+  background: #bdd749;
   margin: 0;
   line-height: 3rem;
   text-align: center; }
@@ -55,7 +55,7 @@ h2 {
     right: 0;
     top: -4px;
     width: 15rem;
-    background: url(/r/flag_orange.svg) no-repeat;
+    background: url(/r/flag_green.svg) no-repeat;
     height: 200%; }
 
 header {
@@ -134,16 +134,16 @@ main {
 
 #blurb {
   text-align: center;
-  background: #ecce73;
+  background: #39b34f;
   padding: 1rem; }
 
 #quote {
-  background: #ecce73;
+  background: #39b34f;
   padding: 1rem; }
 
 #services, #error {
-  background: #f8f8f8 url(/r/bg_hatch.png);
-  border-bottom: 1px solid #eeeecd; }
+  background: #f6f6f6 url(/r/bg_hatch.png);
+  border-bottom: 1px solid #bdd749; }
 
 #services > ul, #error > p {
   padding: 1.5rem 0;
@@ -193,12 +193,12 @@ main {
   padding-top: 4rem; }
 
 #about {
-  background: #f8f8f8 url(/r/bg_dot.png);
-  border-bottom: 1px solid #eeeecd; }
+  background: #f6f6f6 url(/r/bg_dot.png);
+  border-bottom: 1px solid #bdd749; }
 
 #contact {
-  background: #f8f8f8 url(/r/bg_grid.png);
-  border-bottom: 1px solid #eeeecd;
+  background: #f6f6f6 url(/r/bg_grid.png);
+  border-bottom: 1px solid #bdd749;
   padding-bottom: 2rem; }
   #contact form {
     padding: 3rem 0 0;
