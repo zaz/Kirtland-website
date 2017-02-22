@@ -1,12 +1,15 @@
++ favicon
 format quote better
-put services in boxes
-find icons for services
 speed up links with pre-caching or pre-fetching
 + contact details
 obfuscate contact details with JS
 * background
+hone for multiple screen sizes
 + credit link
+check in different browsers
 
 x + HTML content
 x + images
 x style header
+x find icons for services
+x put services in boxes

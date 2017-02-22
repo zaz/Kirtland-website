@@ -34,32 +34,37 @@ header {
 
 #services {
   padding: 0;
-  max-width: 100%;
-  overflow: hidden;
   text-align: center; }
   #services h3 {
     display: block;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 0; }
   #services li {
     display: inline-block;
-    vertical-align: top;
+    position: relative;
     list-style: none;
-    height: 7em;
-    width: 18em;
-    padding: 1.5em 1em;
-    background-color: #fff; }
-    #services li p {
+    height: 10em;
+    width: 33%;
+    min-width: 280px; }
+    #services li .face, #services li .back {
       position: absolute;
-      display: none;
-      width: 18em;
-      background-color: #fff;
-      transition: all 0.3s;
-      margin: -5em 0 0 0; }
-    #services li:hover {
-      z-index: 10; }
-      #services li:hover p {
-        display: block;
-        margin: 0; }
+      top: 50%;
+      transition: all 0.25s;
+      backface-visibility: hidden; }
+    #services li .face {
+      left: 0;
+      right: 0;
+      transform: translateY(-50%); }
+    #services li .back {
+      transform: translateY(-50%) rotateX(180deg);
+      width: 90%;
+      padding: 0 5%; }
+    #services li:hover .face, #services li:hover .back {
+      transition: all 0.5s; }
+    #services li:hover .face {
+      transform: translateY(-50%) rotateX(180deg); }
+    #services li:hover .back {
+      transform: translateY(-50%) rotateX(0deg); }
     #services li img {
       height: 4em;
       width: 4em; }
